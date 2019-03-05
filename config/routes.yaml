@@ -1,0 +1,13 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+people:
+    path: api/swapi/people
+    controller: App\Controller\SwapiController::index
+    methods: ['GET']
+
+people_download:
+    path: api/swapi/people/download
+    controller: App\Controller\SwapiController::download
+    methods: ['POST']
